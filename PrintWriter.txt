@@ -1,0 +1,24 @@
+//wrp to demo printwriter class and store different details into one file
+//yaser ks CG BATCH 2576
+package anudip1;
+import java.io.*;
+public class PrintWriter {
+
+	public static void main(String[] args) {
+		try {
+			String s;
+			FileOutputStream fout=new FileOutputStream("D:\\abc.txt");
+			s="java Course Completed";
+			byte b[]=s.getBytes();	
+			fout.write(b);
+			fout.close();
+			System.out.println("Success....");
+			
+
+	}catch(Exception e){
+		System.out.println(e);
+	}
+		
+	}
+
+}
