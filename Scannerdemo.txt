@@ -1,0 +1,27 @@
+//wrp to demo tp input using Scanner class
+//yaser ks -CG BATCH 2576
+package anudip1;
+import java.util.Scanner;
+import java.util.scanner;
+public class Scannerdemo {
+
+	public static void main(String[] args) {
+		int rollno;
+		String name;
+		double fees;
+		boolean p;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter your rollno");
+		rollno=sc.nextInt();
+		System.out.println("enter your name");
+		name=sc.next();
+		System.out.println("enter your fees");
+		fees=sc.nextDouble();
+		System.out.println("attendance");
+		p=sc.nextBoolean();
+		System.out.println("RollNo:"+rollno+ "name:"+name+"fees:"+fees);
+		sc.close();
+
+	}
+
+}
