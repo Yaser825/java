@@ -1,0 +1,30 @@
+//wrp to demo empDetails
+/yaser ks CG BATCH 2576
+package anudip1;
+
+import java.io.FileOutputStream;
+
+public class empDetails {
+
+	public static void main(String[] args) {
+		try {
+		
+		FileOutputStream fout=new FileOutputStream("D:\\emp.txt");
+		String eid="Employee id is 26";
+		String ename="Yaser";
+		String sal="salary is 40000";
+		byte b[]=eid.getBytes();
+		byte a[]=ename.getBytes();
+		byte c[]=sal.getBytes();
+		fout.write(b);
+		fout.write(a);
+		fout.write(c);
+		fout.close();
+		System.out.println("Success");
+		}catch(Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+
+}
